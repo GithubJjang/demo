@@ -136,7 +136,7 @@ public class UserController {
 									   })
 									   */
 									   .filter(e->{
-										   if((e.getPay()==jobOpening.getPay())|| jobOpening.equals("전체")) {
+										   if((e.getPay()==jobOpening.getPay())|| jobOpening.getPay()==-1) {
 											   return true;
 										   }
 										   else {
